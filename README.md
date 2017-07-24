@@ -12,7 +12,7 @@
 页面效果部分：所有页面内JS代码部分都使用jquery编写,视图中所有图标均为iconfont css引入，同时采用vue2.js的UI框架 mint-ui 美化页面设计，地图部分引入了vue-amap
 
 构建工具使用cordova对webapp进行打包
-
+``` bash
 ## 功能介绍
 以下为已完成的功能；
 # 欢迎页
