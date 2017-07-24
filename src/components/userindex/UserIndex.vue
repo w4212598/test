@@ -98,17 +98,11 @@
                 iconClass: 'icon iconfont icon-shibai'
               })
               },
-
               })
             .then(function (res) {
                 _this.cookieinfo=JSON.stringify(res);
                 res=JSON.parse(res);
                 _this.logininfo = res;
-
-
-
-
-
             }).then(function () {
             _this.$indicator.close();
             if(_this.logininfo.status===0) {

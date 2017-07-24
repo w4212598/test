@@ -6,11 +6,11 @@ export default (Vue)=>{
     Domain:'zyc.s1.natapp.cc',
     Port:'',
     getImgPath(path){
-      return `http://${this.Domain}:${this.Port}/${path}`;
+      return `https://${this.Domain}:${this.Port}/${path}`;
     },
     getAjaxPath(controller,action){
 
-      return `http://${this.Domain}:${this.Port}?r=${controller}/${action}`
+      return `https://${this.Domain}:${this.Port}?r=${controller}/${action}`
     }
   }
 }

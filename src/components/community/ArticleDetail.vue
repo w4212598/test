@@ -17,7 +17,7 @@
     <div class="theme">
       <div class="theme-author"><img class='theme-icon' v-bind:src=getImg(items.icon) alt="" v-if="items.icon">{{items.author}}　
         <span class='author-type' v-if="items.type==0">房东</span><span v-if="items.type==1" class='author-type'>租客</span>
-        <span class="delete-this" v-if="cookiee.username==items.author" v-on:click="deletethis">删除</span>
+        <span class="delete-this" v-if="cookiee&&cookiee.username==items.author" v-on:click="deletethis">删除</span>
       </div>
       <div class='theme-time'>{{items.createTime}}</div>
       <div class="theme-title">{{items.title}}</div>
@@ -38,7 +38,6 @@
         　<span class='author-type' v-if="link.type==0">房东</span><span v-if="link.type==1" class='author-type'>租客</span>
       </div>
         <div class='comment-time'>{{link.createTime}}</div>
-
         <div class="comment-content">{{link.content}}</div>
         <span class="delete-comment" v-if="cookiee.username==link.author" v-on:click="deletecomment(link,link.id)">删除</span>
         <div class="post-comment" >

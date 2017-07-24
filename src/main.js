@@ -1,5 +1,3 @@
-// The Vue build version to load with the `import` command
-// (runtime-only or standalone) has been set in webpack.base.conf with an alias.
 import Mint from 'mint-ui';
 import Vue from 'vue'
 import App from './App'
@@ -17,13 +15,9 @@ VueAMap.initAMapApiLoader({
   key: 'c847114b6bd702756890d1eae1d9f2cb',
   plugin: ['Scale', 'OverView', 'ToolBar', 'MapType','Geolocation']
 });
-
 Vue.use(Mint);
 webConfig(Vue);
 
-
-
-/* eslint-disable no-new */
 new Vue({
   el: '#app',
   router,
