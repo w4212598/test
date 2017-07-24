@@ -16,7 +16,7 @@
 ## 功能介绍
 以下为已完成的功能；
 
-## 功能介绍
+## '欢迎页'
 
 使用jquery fadeIn 淡入淡出文字，5秒计数使用了两个setTimeout，5秒后执行jquery css()方法改变visibilty:hidden
 
