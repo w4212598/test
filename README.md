@@ -78,4 +78,6 @@
 
 后端通过wampsever apache建立本地虚拟域名，再用NATAPP内网穿透功能模拟正式服务器环境。
 
+所有的jquery ajax请求都有error(),防止网络异常时继续请求
+
 张一弛
